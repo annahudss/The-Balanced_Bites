@@ -3,7 +3,8 @@ const mongoose = require("mongoose");
 
 console.log("🔍 Testing MongoDB Connection...\n");
 console.log(`📋 Configuration:`);
-console.log(`   MONGO_URI: ${process.env.MONGO_URI}`);
+console.log("   MONGO_URI: [HIDDEN]");
+console.log(`   NODE_ENV: ${process.env.NODE_ENV || "development"}\n`);
 console.log(`   NODE_ENV: ${process.env.NODE_ENV}\n`);
 
 const testConnection = async () => {
